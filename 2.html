@@ -9,27 +9,57 @@
     </head>
 
     <body>
-        <h1><a href="index.html">WEB</a></h1>
-        <div id="grid">
-            <ol>
-                <li><a href="1.html">HTML</a></li>
-                <li><a href="2.html">CSS</a></li>
-                <li><a href="3.html">JavaScript</a></li>
-            </ol>
+        <h1>웹 페이지를 구성하는 3가지</h1>
+        <table>
+            <tr>
+                <td id="menu">
+                    <h4>목차</h4>
+                    <ol>
+                        <li><a href="index.html">WEB</a></li>
+                        <li><a href="1.html">HTML</a></li>
+                        <li><a href="2.html">CSS</a></li>
+                        <li><a href="3.html">JavaScript</a></li>
+                    </ol>
+                </td>
+                
+                <td id="content">
+                    <h2>CSS</h2>
+                    <p>
+                        기존의 HTML은 웹 문서를 다양하게 설계하고 수시로 변경하는데 많은 제약이 따르는데, 
+                        이를 보완하기 위해 만들어진 것이 스타일 시트이고 스타일 시트의 표준안이 바로 CSS이다. 간단히 스타일 시트라고도 한다.
+                        HTML을 이용해서 웹 페이지를 제작할 경우 전반적인 틀에서 세세한 글꼴 하나 하나를 일일이 지정해주어야 하지만, 
+                        웹 페이지의 스타일(작성형식)을 미리 저장해 두면 웹 페이지의 한 가지 요소만 변경해도 관련되는 전체 페이지의 내용이 한꺼번에 변경되므로, 
+                        문서 전체의 일관성을 유지할 수 있고 작업 시간도 단축된다.
+                        따라서 웹 개발자들은 보다 풍부한 디자인으로 웹을 설계할 수 있고, 글자의 크기, 글자체, 줄간격, 배경 색상, 
+                        배열위치 등을 자유롭게 선택하거나 변경할 수 있으며 유지·보수도 간편하게 할 수 있다.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="button">
+                    클릭 -&gt;<input type="button" value="참고 자료" onclick="print_image()">
+                </td>
+                
+                <td id="source">
+                    <div id="img">
+                        
+                    </div>
+                    <p id="p">
     
-            <div id="article">
-                <h2>CSS</h2>
-                <p>
-                    Cascading Style Sheets (CSS) is a style sheet language used for describing
-                    the presentation of a document written in a markup language. Although most
-                    often used to set teh visual style of web pages and user interfaces written
-                    in HTML and XHTML, the language can be applied to any XML document, including
-                    plain XML, SVG and XUL, and is applicable to rendering in sepeech, or on other
-                    media. Along with THML and JavaScript, CSS is a cornerstone technology used by
-                    most websites to create visuallly engaging webpages, user interfaces for web 
-                    applications, and user interfaces for many mobile applications.
-                </p>
-            </div>
-        </div>
+                    </p>    
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            function print_image(){
+                let img = document.getElementById("img");
+                let p = document.getElementById("p");
+                img.style.display="inline-block";
+                img.innerHTML = "<img src='C:/Users/chlrk/OneDrive/사진/스크린샷/CSS자료.png' width='450px' height='250px'>";
+                p.innerHTML = "빨간색 사각형 공간에 스타일 시트를 작성할 수 있으며, .css확장자 파일을 만들어 스타일시트를 작성할 수도 있습니다.";
+            }
+        </script>
     </body>
 </html>
