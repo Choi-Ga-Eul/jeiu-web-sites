@@ -1,17 +1,48 @@
 function change_night(){
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    let a = document.querySelector('a');
-    for(let i = 0; i < a.length; i++){
-        a[i].style.color = 'white';
+    let body = document.querySelector('body');
+    let clock = document.querySelector('#clock');
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+    clock.style.backgroundColor = "black";
+    clock.style.color = "white";
+    clock.style.borderColor = "white";
+    let li = document.querySelector('li');
+    for(let i = 0; i < li.length; i++){
+        li[i].style.color = 'white';
     }
 }
 
 function change_day(){
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-    let a = document.querySelector('a');
-    for(let i = 0; i < a.length; i++){
-        a[i].style.color = 'black';
+    let body = document.querySelector('body');
+    let clock = document.querySelector('#clock');
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+    clock.style.backgroundColor = "white";
+    clock.style.color = "black";
+    clock.style.borderColor = "black";
+    let li = document.querySelector('li');
+    for(let i = 0; i < li.length; i++){
+        li[i].style.color = 'black';
     }
+}
+
+function change_myStyle(){
+    let body = document.querySelector('body');
+    let clock = document.querySelector('#clock');
+    body.style.backgroundColor = "skyblue";
+    body.style.color = "white";
+    clock.style.backgroundColor = "skyblue";
+    clock.style.color = "white";
+    clock.style.borderColor = "white";
+}
+
+function startClock() {
+    let clock = document.getElementById("clock");
+    timeout(clock);
+}
+
+function timeout(obj) {
+    let current = new Date();
+    obj.innerHTML = current.toLocaleTimeString()
+    setTimeout("timeout(clock)", 1000); // 1초 후 timeout() 호출
 }

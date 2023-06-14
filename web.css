@@ -30,3 +30,12 @@ ol{
 #container{
     border:2px solid gray;
 }
+#clock {
+    display : inline-block;
+    width : 100px;
+    border : 1px solid black;
+}
+
+input[type=button]{
+    margin-bottom:5px;
+}

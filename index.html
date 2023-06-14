@@ -9,10 +9,12 @@
         <script src="web.js"></script>
     </head>
 
-    <body>
+    <body onload="startClock()">
         <h1><a href="index.html">WEB</a></h1>
+        <div id="clock"></div>
         <input type="button" value="야간 모드" onclick="change_night()">
         <input type="button" value="주간 모드" onclick="change_day()">
+        <input type="button" value="사용자지정 모드" onclick="change_myStyle()">
         <div id="container">
             <div id="grid">
                 <ol>
