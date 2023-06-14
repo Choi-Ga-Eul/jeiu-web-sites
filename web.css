@@ -1,0 +1,32 @@
+body{
+    margin:10px;
+}
+h1{
+    font-size:60px;
+    text-align:center;
+    margin:0;
+    padding:20px;
+}
+a{
+    text-decoration:none;
+}
+ol{
+    border-right:2px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+}
+#grid{
+    display:grid;
+    grid-template-columns:150px 1fr;
+    border-bottom:2px solid gray;
+}
+#grid ol{
+    padding-left:32px;
+}
+#grid #article{
+    padding-left:25px;
+}
+#container{
+    border:2px solid gray;
+}

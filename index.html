@@ -5,24 +5,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta httpe-equiv="X-UA-Compatible" content="ie=edge">
         <title>WEB - Welcome</title>
+        <link href="web.css" type="text/css" rel="stylesheet">
+        <script src="web.js"></script>
     </head>
 
     <body>
         <h1><a href="index.html">WEB</a></h1>
-        <ol>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
-        </ol>
-
-        <h2>Wecome</h2>
-        <p>
-            The World Wide Web (abbreviated WWW or the WEb) is an information space where documents and other web 
-            resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.
-            English scientist Tim Berners-Lee invented the World Wide Web in 1989. 
-            He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.
-            The WEb browser was released outside of CERN in 1991, 
-            first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
-        </p>
+        <input type="button" value="야간 모드" onclick="change_night()">
+        <input type="button" value="주간 모드" onclick="change_day()">
+        <div id="container">
+            <div id="grid">
+                <ol>
+                    <li><a href="1.html">HTML</a></li>
+                    <li><a href="2.html">CSS</a></li>
+                    <li><a href="3.html">JavaScript</a></li>
+                </ol>
+        
+                <div id="article">
+                    <h2>Wecome</h2>
+                    <p>
+                        The World Wide Web (abbreviated WWW or the WEb) is an information space where documents and other web 
+                        resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.
+                        English scientist Tim Berners-Lee invented the World Wide Web in 1989. 
+                        He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.
+                        The WEb browser was released outside of CERN in 1991, 
+                        first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="row_2">
+                <img src="Web.png" width="500" height="290" style="float:left; padding:0px 10px 10px 10px">
+                <p>
+                    일반적으로 웹 ( Web )으로 알려진 월드 와이드 웹(WWW)은 특정 규칙인 HTTP ( Hypertext Transfer Protocol )<br>
+                    에 따라 인터넷을 통해 문서 및 기타 웹 리소스에 액세스할 수 있도록 하는 정보 시스템 입니다.<br>
+                    문서 및 다운로드 가능한 미디어는 웹 서버를 통해 네트워크에서 사용할 수 있으며 웹 브라우저와 같은 프로그램에서<br>
+                    액세스할 수 있습니다. World Wide Web의 서버와 리소스는 URL( Uniform Resource Locator )이라는 문자열을 통해 식별되고 찾습니다.<br>
+                    원본이자 여전히 매우 일반적인 문서 유형은 HTML( Hypertext Markup Language ) 형식의 웹 페이지 입니다.<br>
+                    이 마크업 언어는 복잡한 사용자 상호 작용을 구현하는 일반 텍스트 , 이미지 , 포함된 비디오 및 오디오 콘텐츠,<br>
+                    스크립트 (짧은 프로그램)를 지원합니다. HTML 언어도 지원합니다.다른 웹 리소스에 대한 즉각적인 액세스를 제공하는<br>
+                    하이퍼링크(포함된 URL). 웹 탐색 ​​또는 웹 서핑은 여러 웹사이트에서 이러한 하이퍼링크를 따라가는 일반적인 관행입니다.<br>
+                    단일 웹 서버는 여러 웹 사이트를 제공할 수 있지만 일부 웹 사이트, 특히 가장 인기 있는 웹 사이트는 여러 서버에서 제공될 수 있습니다.<br>
+                    웹 사이트 콘텐츠는 수많은 회사, 조직, 정부 기관 및 개인 사용자 가 제공합니다. 막대한 양의 교육, 엔터테인먼트,<br>
+                    상업 및 정부 정보로 구성됩니다. World Wide Web은 세계에서 가장 지배적인 정보 시스템 플랫폼이 되었습니다.<br>
+                    전 세계 수십억 명의 사람들이 인터넷과 상호 작용하는 데 사용하는 기본 도구입니다. 웹은 1989년 CERN 의 Tim Berners-Lee<br>
+                    에 의해 발명되었고 1991년 대중에게 공개되었습니다. 웹은 "범용 연결 정보 시스템"으로 인식되었습니다
+                </p>
+            </div>
+        </div>
     </body>
 </html>
